@@ -20,8 +20,9 @@ public class TimeClient extends Thread{
 		Socket socket = new Socket("localhost", 7000);
 		DataInputStream din = new DataInputStream(socket.getInputStream());
 		String time = din.readUTF();
-		System.out.println(time);
+		System.out.println(time);	
 		Thread.sleep(1000);
 		}
 	}
 }
+
